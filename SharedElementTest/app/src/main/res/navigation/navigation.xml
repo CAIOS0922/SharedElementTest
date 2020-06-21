@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation2"
+    app:startDestination="@id/testFragment">
+
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.sharedelementtest.TestFragment"
+        android:label="TestFragment" >
+        <action
+            android:id="@+id/action_testFragment_to_testActivity"
+            app:destination="@id/testActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/testActivity"
+        android:name="com.example.sharedelementtest.TestActivity"
+        android:label="TestActivity" />
+</navigation>
